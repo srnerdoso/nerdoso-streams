@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://clips.twitch.tv;">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nerdoso Stream</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-src 'self' https://twitch.tv https://www.youtube.com;" />
   </head>
   <body>
     <h1>Teste de iframes</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias officiis doloribus at, dignissimos magni pariatur, ad corrupti similique, quasi nulla laboriosam ex omnis tempora ab incidunt? Voluptatum laboriosam perferendis ad.</p>
     <iframe
-      src="https://clips.twitch.tv/embed?clip=PowerfulCarefulCurlewHoneyBadger-nhd_BcPZkCPTMqAt&parent=srnerdoso.github.io"
+      src="https://player.twitch.tv/?channel=srnerdoso&parent=www.example.com"
       frameborder="0"
       allowfullscreen="true"
       scrolling="no"
       height="378"
       width="620"></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/e6zCBuT5Spw?si=xjavMBBhx5M_kFuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </body>
 </html>
