@@ -3,29 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nerdoso Stream</title>
     <meta
       http-equiv="Content-Security-Policy"
       content="frame-src 'self' https://player.twitch.tv https://www.youtube.com;" />
+    <title>Nerdoso Stream</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <h1>Teste de iframes</h1>
-    <iframe
-      src="https://player.twitch.tv/?channel=srnerdoso&parent=srnerdoso.github.io"
-      frameborder="0"
-      allowfullscreen="true"
-      scrolling="no"
-      height="378"
-      width="620"></iframe>
-
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/e6zCBuT5Spw?si=xjavMBBhx5M_kFuU"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen></iframe>
+    <div id="container-header">
+      <header>
+        <div id="logo-header">
+          <img src="../images/logo-nome.png" alt="Logo SrNerdoso" />
+        </div>
+        <div id="menu-header">
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Lives</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div id="container"></div>
   </body>
 </html>
