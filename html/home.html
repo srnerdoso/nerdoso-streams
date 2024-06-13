@@ -11,20 +11,28 @@
       rel="shortcut icon"
       href="../images/favicon.ico"
       type="image/x-icon" />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/home-style.css" />
   </head>
   <body>
     <div id="container-header">
       <header>
-        <div id="logo-header">
-          <img src="../images/logo-nome.png" alt="Logo SrNerdoso" />
-        </div>
+        <a href="home.html">
+          <div id="logo-header">
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="../images/logo-nome-p.png"
+                type="image/png" />
+              <img src="../images/logo-nome.png" alt="Logo SrNerdoso" />
+            </picture>
+          </div>
+        </a>
         <div id="menu-header">
           <nav>
-            <a href="#">Home</a>
-            <a href="#">Lives</a>
-            <a href="#">Contato</a>
-            <a href="#">Sobre</a>
+            <a href="home.html">Home</a>
+            <a href="lives.html">Lives</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
           </nav>
         </div>
       </header>
