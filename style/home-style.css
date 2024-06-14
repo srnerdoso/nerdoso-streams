@@ -9,6 +9,12 @@
   --header-color: rgb(255, 115, 0);
   --laranja-header: rgb(255, 153, 0);
   --azul-nav: rgb(0, 0, 122);
+  --container-back-color: rgb(5, 5, 5);
+  --layout-back-color: rgb(10, 10, 10);
+  --layout-font-color: rgb(73, 73, 73);
+  --link-color: white;
+  --h1-main-color: white;
+  --h2-layout-color: rgb(126, 126, 126);
 }
 
 #container-header {
@@ -36,6 +42,12 @@ header {
   width: 280px;
   height: 100%;
   background-color: var(--azul-nav);
+  transition-duration: 300ms;
+}
+
+#menu-header:hover {
+  width: 350px;
+  transition-duration: 400ms;
 }
 
 nav a {
@@ -48,10 +60,84 @@ nav a {
 }
 
 nav a:hover {
-  background-color: aliceblue;
-  border: 5px solid aliceblue;
   color: var(--azul-nav);
   border-radius: 5px;
+  transition-duration: 300ms;  background-color: aliceblue;
+  border: 5px solid aliceblue;
+}
+
+#container {
+  background-color: var(--container-back-color);
+}
+
+#layout {
+  max-width: 925px;
+  min-width: 320px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--layout-back-color);
+  color: var(--layout-font-color);
+  transition: 500ms;
+}
+
+#layout h2 {
+  margin-bottom: 5px;
+  color: var(--h2-layout-color);
+}
+
+#layout h3 {
+  margin-bottom: 20px;
+}
+
+#layout p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#layout a {
+  text-align: justify;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--link-color);
+}
+
+#layout h1 {
+  padding-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#melhores-videos-youtube, #youtube-clips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#melhores-videos-youtube iframe, #youtube-clips iframe{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 56.25%;
+  aspect-ratio: 16/9;
+}
+
+#chanells-yt-tw {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#twitch-clips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#twitch-clips iframe {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 56.25%;
+  aspect-ratio: 16/9;
 }
 
 @media (max-width: 500px) {
