@@ -62,7 +62,8 @@ nav a {
 nav a:hover {
   color: var(--azul-nav);
   border-radius: 5px;
-  transition-duration: 300ms;  background-color: aliceblue;
+  transition-duration: 300ms;
+  background-color: aliceblue;
   border: 5px solid aliceblue;
 }
 
@@ -107,14 +108,16 @@ nav a:hover {
   text-align: center;
 }
 
-#melhores-videos-youtube, #youtube-clips {
+#melhores-videos-youtube,
+#youtube-clips {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-#melhores-videos-youtube iframe, #youtube-clips iframe{
+#melhores-videos-youtube iframe,
+#youtube-clips iframe {
   margin-bottom: 20px;
   width: 100%;
   height: 56.25%;
