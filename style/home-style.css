@@ -12,15 +12,17 @@
   --container-back-color: rgb(5, 5, 5);
   --layout-back-color: rgb(10, 10, 10);
   --layout-font-color: rgb(73, 73, 73);
-  --link-color: white;
+  --link-color: rgb(126, 126, 126);
   --h1-main-color: white;
   --h2-layout-color: rgb(126, 126, 126);
 }
 
 #container-header {
-  background-color: var(--header-color);
   width: 100%;
   height: 80px;
+  position: relative;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.445);
+  background-color: var(--header-color);
 }
 
 header {
@@ -41,8 +43,13 @@ header {
   justify-content: center;
   width: 280px;
   height: 100%;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.315);
   background-color: var(--azul-nav);
   transition-duration: 300ms;
+}
+
+#menu-header > img {
+  display: none;
 }
 
 #menu-header:hover {
@@ -92,6 +99,7 @@ nav a:hover {
 }
 
 #layout p {
+  text-align: justify;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -115,6 +123,10 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+#melhores-videos-youtube p {
+  margin-top: 20px;
 }
 
 #melhores-videos-youtube iframe,
@@ -145,18 +157,33 @@ nav a:hover {
 }
 
 @media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
   #logo-header {
-    padding-top: 4px;
+    margin-top: 4px;
     width: 145px;
     height: 45px;
   }
   #menu-header {
-    margin: auto;
-    width: 100%;
-    height: 35px;
+    flex-direction: column;
+    width: 80px;
+    height: 100%;
+    transition: 200ms;
+  }
+  #menu-header > img {
+    display: flex;
+    margin-top: 127px;
+    margin-bottom: 25px;
+  }
+  #menu-header:hover {
+    width: 100px;
+    height: 350px;
+    border-radius: 0 0 0 10px;
+    transition: 100ms;
+  }
+  #menu-header:hover > nav > a {
+    visibility: visible;
+  }
+  nav a {
+    display: flex;
+    visibility: hidden;
   }
 }
