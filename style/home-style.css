@@ -173,13 +173,13 @@ nav a:hover {
     margin-top: 127px;
     margin-bottom: 25px;
   }
-  #menu-header:hover {
+  #menu-header:focus {
     width: 100px;
     height: 350px;
     border-radius: 0 0 0 10px;
     transition: 100ms;
   }
-  #menu-header:hover > nav > a {
+  #menu-header:focus > nav > a {
     visibility: visible;
   }
   nav a {
