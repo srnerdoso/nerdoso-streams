@@ -168,22 +168,36 @@ nav a:hover {
     height: 100%;
     transition: 200ms;
   }
-  #menu-header > img {
-    display: flex;
-    margin-top: 127px;
-    margin-bottom: 25px;
-  }
-  #menu-header:focus {
+  #menu-header:hover {
     width: 100px;
     height: 350px;
     border-radius: 0 0 0 10px;
     transition: 100ms;
   }
-  #menu-header:focus > nav > a {
-    visibility: visible;
+  #menu-header > img {
+    display: flex;
+  } 
+  #menu-header:hover > img {
+    margin-top: 137px;
+    margin-bottom: 25px;
+  }
+  #menu-header:hover > nav > a {
+    display: block;
+  }  
+  #menu-header:active > img {
+    margin-top: 137px;
+    margin-bottom: 25px;
+  }
+  #menu-header:active {
+    width: 100px;
+    height: 350px;
+    border-radius: 0 0 0 10px;
+    transition: 100ms;
+  }
+  #menu-header:active > nav > a {
+    display: block;
   }
   nav a {
-    display: flex;
-    visibility: hidden;
+    display: none;
   }
 }
