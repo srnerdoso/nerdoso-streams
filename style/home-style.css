@@ -68,6 +68,7 @@ nav a:hover {
 }
 
 #container {
+  font-family: "Ubuntu", sans-serif;
   background-color: var(--container-back-color);
 }
 
