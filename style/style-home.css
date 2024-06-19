@@ -25,7 +25,7 @@
 
 #text-header {
   padding: 80px 80px 0 80px;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-size: 2em;
   color: white;
 }
@@ -98,7 +98,7 @@
   position: relative;
   top: -41px;
   opacity: 0;
-  transition-duration: 0.3s
+  transition-duration: 0.3s;
 }
 
 #menu-container:hover .menu.icons {
@@ -107,58 +107,129 @@
 }
 
 .menu.live {
-    position: absolute;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--menu-icons-background-colo);
-    transition-duration: 0.3s;
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--menu-icons-background-colo);
+  transition-duration: 0.3s;
 }
 
 #menu-container:hover .menu.live {
-    transform: translateY(-57px);
-    transition-duration: 0.15s;
+  transform: translateY(-57px);
+  transition-duration: 0.15s;
 }
 
 .menu.replay-lives {
-    position: absolute;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--menu-icons-background-colo);
-    transition-duration: 0.3s
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--menu-icons-background-colo);
+  transition-duration: 0.3s;
 }
 
 #menu-container:hover .menu.replay-lives {
-    transform: translateX(55px);
-    transition-duration: 0.25s;
+  transform: translateX(55px);
+  transition-duration: 0.25s;
 }
 
 .menu.last-videos {
-    position: absolute;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--menu-icons-background-colo);
-    transition-duration: 0.3s
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--menu-icons-background-colo);
+  transition-duration: 0.3s;
 }
 
 #menu-container:hover .menu.menu.last-videos {
-    transform: translateY(56px);
-    transition-duration: 0.35s;
+  transform: translateY(56px);
+  transition-duration: 0.35s;
 }
 
 .menu.clips {
-    position: absolute;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--menu-icons-background-colo);
-    transition-duration: 0.3s
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--menu-icons-background-colo);
+  transition-duration: 0.3s;
 }
 
 #menu-container:hover .menu.clips {
-    transform: translateX(-55px);
-    transition-duration: 0.45s;
+  transform: translateX(-55px);
+  transition-duration: 0.45s;
 }
 
-#layout {
-    font-family: 'Ubuntu';
+#container {
+    background-color: rgb(226, 226, 226);
+}
+
+main {
+  font-family: "Ubuntu";
+  text-align: justify;
+  max-width: 1325px;
+  margin: auto;
+  background-color: white;
+}
+
+section {
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.iframes {
+  max-width: 1325px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: orangered;
+}
+
+.iframes iframe {
+  width: 100%;
+}
+
+#subscribe {
+  margin-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#footer-images {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+#footer-images img {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+}
+
+@media (max-width: 720px) {
+  #text-header {
+    padding: 20px 20px 0 20px;
+    font-size: 1em;
+  }
+  #text-header h1 {
+    line-height: 27px;
+  }
+
+  section {
     padding: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #subscribe {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
 }
