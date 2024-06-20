@@ -3,11 +3,17 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Ubuntu";
 }
 
 :root {
   --menu-background-color: orange;
-  --menu-icons-background-colo: rgb(0, 110, 255);
+  --menu-background-color: #ef6903;
+  --menu-container-background-color: #ef6903c9;
+  --menu-icons-hover-background-color: #ef6903;
+  --box-shadow-menu: 0 0 3px rgba(0, 0, 0, 0.3);
+  --a-color: orangered;
+  --iframe-background-color: orangered;
 }
 
 #container-header {
@@ -16,11 +22,13 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  overflow: hidden;
 }
 
 #layout-header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 
 #text-header {
@@ -40,13 +48,20 @@
 }
 
 #menu-container {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 50%;
+}
+
+#menu-container:hover {
+  background-color: var(--menu-container-background-color);
+  transition-duration: 0.3s;
 }
 
 #menu-layout {
@@ -57,6 +72,7 @@
   align-items: center;
   border-radius: 50%;
   background-color: var(--menu-background-color);
+  box-shadow: var(--box-shadow-menu);
 }
 
 .menu.image {
@@ -107,63 +123,90 @@
 }
 
 .menu.live {
+  width: 30px;
+  height: 30px;
   position: absolute;
   padding: 5px;
   border-radius: 50%;
-  background-color: var(--menu-icons-background-colo);
   transition-duration: 0.3s;
+  box-shadow: var(--box-shadow-menu);
 }
 
 #menu-container:hover .menu.live {
   transform: translateY(-57px);
   transition-duration: 0.15s;
+  background-color: var(--menu-icons-hover-background-color);
+}
+
+.menu.live:hover a {
+  filter: invert(1);
 }
 
 .menu.replay-lives {
+  width: 30px;
+  height: 30px;
   position: absolute;
   padding: 5px;
   border-radius: 50%;
-  background-color: var(--menu-icons-background-colo);
   transition-duration: 0.3s;
+  box-shadow: var(--box-shadow-menu);
 }
 
 #menu-container:hover .menu.replay-lives {
   transform: translateX(55px);
   transition-duration: 0.25s;
+  background-color: var(--menu-icons-hover-background-color);
+}
+
+.menu.replay-lives:hover a {
+  filter: invert(1);
 }
 
 .menu.last-videos {
+  width: 30px;
+  height: 30px;
   position: absolute;
   padding: 5px;
   border-radius: 50%;
-  background-color: var(--menu-icons-background-colo);
   transition-duration: 0.3s;
+  box-shadow: var(--box-shadow-menu);
 }
 
 #menu-container:hover .menu.menu.last-videos {
   transform: translateY(56px);
   transition-duration: 0.35s;
+  background-color: var(--menu-icons-hover-background-color);
+}
+
+.menu.last-videos:hover a {
+  filter: invert(1);
 }
 
 .menu.clips {
+  width: 30px;
+  height: 30px;
   position: absolute;
   padding: 5px;
   border-radius: 50%;
-  background-color: var(--menu-icons-background-colo);
   transition-duration: 0.3s;
+  box-shadow: var(--box-shadow-menu);
 }
 
 #menu-container:hover .menu.clips {
   transform: translateX(-55px);
   transition-duration: 0.45s;
+  background-color: var(--menu-icons-hover-background-color);
+}
+
+.menu.clips:hover a {
+  filter: invert(1);
 }
 
 #container {
-    background-color: rgb(226, 226, 226);
+  background-color: rgb(226, 226, 226);
 }
 
 main {
-  font-family: "Ubuntu";
   text-align: justify;
   max-width: 1325px;
   margin: auto;
@@ -180,7 +223,7 @@ section {
   max-width: 1325px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: orangered;
+  background-color: var(--iframe-background-color);
 }
 
 .iframes iframe {
@@ -194,22 +237,33 @@ section {
   padding-bottom: 50px;
 }
 
+#subscribe a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--a-color);
+}
+
 footer {
-    padding: 10px;
-    text-align: center;
-    background-color: black;
-    color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
 
 #footer-images {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
 }
 
 #footer-images img {
-    margin-left: 1.5px;
-    margin-right: 1.5px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+}
+
+#twitch-icon {
+  width: 26px;
+  height: 26px;
 }
 
 @media (max-width: 720px) {

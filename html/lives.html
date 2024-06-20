@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; frame-src 'self' https://player.twitch.tv https://www.twitch.tv;" />
+    <title>Ao Vivo</title>
+    <link rel="stylesheet" href="../style/style-live.css" />
+  </head>
+  <body>
+    <div id="container-header">
+      <header>
+        <img src="../images/logos/logo.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="#">Lives</a></li>
+            <li><a href="#">Replays</a></li>
+            <li><a href="#">Vídeos</a></li>
+            <li><a href="#">Clipes</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div id="container">
+      <div id="layout">
+        <main>
+          <h1>
+            <span class="light-red">•</span>
+            AO VIVO
+            <span class="light-red">•</span>
+          </h1>
+          <div id="container-live">
+            <iframe
+              src="https://player.twitch.tv/?channel=srnerdoso&parent=srnerdoso.github.io"
+              frameborder="0"
+              allowfullscreen="true"
+              scrolling="no"
+              height="378"
+              width="620"></iframe>
+          </div>
+          <div id="chat-live">
+            <iframe
+              src="https://www.twitch.tv/popout/srnerdoso/chat?popout="
+              frameborder="0"
+              height="400"
+              width="620"></iframe>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <p>Me siga nas redes sociais</p>
+      <div id="footer-images">
+        <a
+          href="https://www.youtube.com/srnerdoso"
+          target="_blank"
+          rel="external"
+          ><img src="../images/logos/youtube-logo.png" alt=""
+        /></a>
+        <a href="https://www.twitch.tv/srnerdoso" target="_blank" rel="external"
+          ><img id="twitch-icon" src="../images/logos/twitch-logo.png" alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/srnerdoso"
+          target="_blank"
+          rel="external"
+          ><img src="../images/logos/instagram-logo.png" alt=""
+        /></a>
+        <a href="https://github.com/srnerdoso" target="_blank" rel="external"
+          ><img src="../images/logos/github-logo.png" alt=""
+        /></a>
+        <a href="https://discord.gg/mwdDHhtBJH" target="_blank" rel="external"
+          ><img src="../images/logos/discord-logo.png" alt=""
+        /></a>
+      </div>
+      <p>Site criado por srnerdoso</p>
+    </footer>
+  </body>
+</html>
